@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App</title>
     <meta name="title" title="App">
     <meta name="description" content="is a weather App">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assect/css/style.css">
+    <Script src="./assect/js/app.js"></Script>
+    <Script src="./assect/js/route.js"></Script>
+
+
 </head>
+
 <body>
-    
+
+    <header class="header">
+        <div class="container">
+            <a href="http://" class="logo">
+                <img src="./assect/images/logo.png" width="364" height="58" alt="logo" srcset="">
+            </a>
+            <div class="serach-view" data-search-view>
+                <div class="search-wrapper">
+                    <input type="search" name="search" class="search-fild  " placeholder="Search city ..."
+                        autocomplete="off" data-search-field>
+                    <span class="m-icon">search</span>
+
+                    <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggler>
+                        <span class="m-icon">arrow_back</span>
+                    </button>
+
+                </div>
+
+                <div class="search-result" data-search-result>
+                    <ul class="view-list" data-search-list>
+                        <li class="view-item">
+                            <span class="m-icon">location_on</span>
+
+
+                            <div>
+                                <p class="item-title">India</p>
+
+                                <p class="lable-2 item-subtitle">State of India,MH</p>
+                            </div>
+
+                            <a href="#" class="item-link has-state" data-search-toggler></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button class="icon-btn has-state" aria-label="open search" data-search-toggler="">
+
+                    <span class="m-icon icon"></span>
+                </button>
+
+                <a href="#  " class="btn-primary has-state" data-current-location-btn>
+                    <span class="m-icon">My Locaton</span>
+                    <span class="span">Current Location</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
 </body>
+
 </html>
